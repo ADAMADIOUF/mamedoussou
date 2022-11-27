@@ -2,12 +2,14 @@ import React,{useState} from 'react'
 import product from '../dataBoutique'
 import Bimg1 from "../../src/images/b1.jpeg"
 import Footer from '../Footer'
+import Slider from '../Slider'
 const Boutique = () => {
  const [products, setProducts] = useState(product)
   return (
     <div>
       <div className='boutique'>
-        <img src={Bimg1} alt='' />
+        {/* <img src={Bimg1} alt='' /> */}
+        <Slider/>
         <div className='section-center boutique-content'>
           <div className='boutique-products'>
             {products.map((product) => {

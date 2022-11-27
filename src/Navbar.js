@@ -1,6 +1,6 @@
 import React,{useState,useRef,useEffect} from 'react'
 import {FaBars} from "react-icons/fa"
-import Logo from "../src/images/logomamedoussou2.png"
+import Logo from "../src/images/logom2.png"
 import  {links} from "./dataNav";
 
 const Navbar = () => {

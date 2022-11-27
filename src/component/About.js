@@ -7,6 +7,7 @@ import HImg4 from '../images/history4.png'
 import data from '../dataQuestion'
 import Question from '../Question'
 import Footer from '../Footer'
+import Gallery from '../Gallery'
 const About = () => {
  const[questions,setQuestions] = useState(data)
   return (
@@ -29,12 +30,14 @@ const About = () => {
               <h3>l'histoire du g i e mame doussou</h3>
               <h5>un savoir-faire artisanal familial</h5>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Aliquam ducimus ut eligendi ex assumenda id suscipit, voluptates
-                eaque reprehenderit dolorem sed rerum nam cum dignissimos nemo
-                voluptatum delectus officia possimus optio tempore eos soluta
-                harum ab repudiandae. Ab ea repellat assumenda temporibus iusto
-                quisquam odit, eaque aperiam, consectetur nemo sed!
+                L'Élevage du poulet je l'ai hérité de ma grande mere mame
+                Doussou camara qui etait une saint louisaine gres pieu se qui
+                Sadonnait à l'Élevage du poulet et parmi ses sujets il y avait
+                un grand coq qu'lle appelait Bocar; Bocar était un cousin de mon
+                Grand-père Baîdy mon père Semou faisait l'Élevage du poulet
+                ainsi mon oncle Léonce Gueye de Saint-Louis donc c'est un
+                héritage puis pour avoir de bonnes viandes de qualité ils faut
+                allait vers l'Élevage écologique.
               </p>
             </article>
             <article className='history-content'>
@@ -57,16 +60,15 @@ const About = () => {
             </article>
           </div>
         </div>
-        <div className="questions">
-         <h4>questions & reponses</h4>
-{questions.map((question) =>{
- return(
-  <Question key={question.id}{...question}/>
- )
-})}
+        <div className='questions'>
+          <h4>questions & reponses</h4>
+          {questions.map((question) => {
+            return <Question key={question.id} {...question} />
+          })}
         </div>
+        <Gallery/>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   )
 }
