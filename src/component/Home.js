@@ -31,15 +31,16 @@ const Home = () => {
           <img src={valeurImg} alt='' />
         </div>
         <div className='valeur-details'>
-          <h3>nos valeurs</h3>
+          <h3>Goûtez à la saveur du terroir
+            <span>chez mame dousso</span> </h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Accusantium quo sed ipsa vitae expedita placeat nesciunt minus
-            molestias repudiandae accusamus quia reprehenderit, ducimus dolorem
-            consectetur asperiores officiis aliquid facere, dignissimos et
-            recusandae aut. Autem inventore quidem iste veritatis quam. Totam
-            aut esse ratione soluta quasi perspiciatis, laborum fuga facilis
-            blanditiis?
+            C’est avec un immense plaisir que je vous invite à découvrir ma
+            production de volailles et de foie gras. J’élève dans ma ferme,des
+            chèvres ,des moutons ,des canards,des poulets, et des pintades,des lapins issues
+            de la région. A travers ma gastronomie, je vous propose des produits
+            de qualité, d’une saveur exceptionnelle. Pour découvrir la diversité
+            de mes produits, n’hésitez pas à visiter mon exploitation. Je vous
+            garantis une expérience gustative enrichissante.
           </p>
         </div>
       </section>
@@ -161,8 +162,7 @@ const Home = () => {
         </div>
       </section>
       <Products />
-<Footer/>
-     
+      <Footer />
     </div>
   )
 }

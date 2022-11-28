@@ -7,10 +7,11 @@ import { AiOutlineMail, AiTwotonePhone } from 'react-icons/ai'
 import Footer from '../Footer'
 const Contact = () => {
   return (
-    <div>
+    <div className='contacts'>
       <div className='contact'>
         <img src={Cimg1} alt='' />
       </div>
+      <p>Pour tout complément d’informations, merci de me contacter.</p>
       <div className='container-links-contact section-center'>
         <div className='contact-contact-links'>
           <img src={Cimg2} alt='' />
@@ -53,12 +54,12 @@ const Contact = () => {
                 <input type='text' className='input-form' />
               </div>
               <textarea name='' className='input-form'></textarea>
-              <button className="btn btn-contact">envoyer</button>
+              <button className='btn btn-contact'>envoyer</button>
             </form>
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

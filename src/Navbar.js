@@ -1,6 +1,8 @@
+
 import React,{useState,useRef,useEffect} from 'react'
 import {FaBars} from "react-icons/fa"
 import Logo from "../src/images/logom2.png"
+import Animates from './Animates';
 import  {links} from "./dataNav";
 
 const Navbar = () => {
@@ -19,28 +21,31 @@ const Navbar = () => {
   }
  },[showNav])
   return (
-    <nav>
-      <div className='nav-center'>
-        <div className='nav-header'>
-          <img src={Logo} className='logo' alt='' />
-          <button className='btn-toggle' onClick={toggleNav}>
-            <FaBars />
-          </button>
+    <>
+      <nav>
+        <div className='nav-center'>
+          <div className='nav-header'>
+            <img src={Logo} className='logo' alt='' />
+            <button className='btn-toggle' onClick={toggleNav}>
+              <FaBars />
+            </button>
+          </div>
+          <div className='nav-container' ref={navContainerRef}>
+            <ul className='links' ref={navRef}>
+              {links.map((link) => {
+                const { id, url, text } = link
+                return (
+                  <li key={id}>
+                    <a href={url}>{text}</a>
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
         </div>
-        <div className="nav-container" ref={navContainerRef}>
-         <ul className="links" ref={navRef}>
-{links.map((link) =>{
- const{id,url,text} = link;
- return(
-  <li key={id}>
-   <a href={url}>{text}</a>
-  </li>
- )
-})}
-         </ul>
-        </div>
-      </div>
-    </nav>
+      </nav>
+      <Animates />
+    </>
   )
 }
 

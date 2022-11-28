@@ -1,9 +1,11 @@
 import React,{useState} from 'react'
+
 import BannerImg1 from "../images/about1.png"
 import HImg1 from '../images/history1.png'
 import HImg2 from '../images/history2.png'
 import HImg3 from '../images/history3.png'
 import HImg4 from '../images/history4.png'
+import A1 from '../images/tes-b.png'
 import data from '../dataQuestion'
 import Question from '../Question'
 import Footer from '../Footer'
@@ -66,8 +68,32 @@ const About = () => {
             return <Question key={question.id} {...question} />
           })}
         </div>
-        <Gallery/>
+        <Gallery />
       </section>
+      <div className='about-avantage'>
+        <div className='avantage section-center'>
+          <div className='container-avantage'>
+            <artcile className='avantages a1'>
+              <div>
+                <img src={A1} alt='' />
+                <h3>Large choix de produits</h3>
+              </div>
+            </artcile>
+            <artcile className='avantages a2'>
+              <div>
+                <img src={A1} alt='' />
+                <h3>Vente directe</h3>
+              </div>
+            </artcile>
+            <artcile className='avantages a3'>
+              <div>
+                <img src={A1} alt='' />
+                <h3>Produits de qualité</h3>
+              </div>
+            </artcile>
+          </div>
+        </div>
+      </div>
       <Footer />
     </div>
   )
