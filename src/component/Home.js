@@ -14,6 +14,9 @@ import vImg7 from '../images/v7 1.png'
 import vImg8 from '../images/v8.png'
 import GImg1 from '../images/gie1.png'
 import GImg2 from '../images/gie2.png'
+import Video1 from '../images/v1.mp4'
+import { DefaultPlayer as Video } from 'react-html5video'
+import 'react-html5video/dist/styles.css'
 import LogalImg2 from '../images/local2.jpeg'
 import LastImg1 from '../images/last-home1.jpg'
 import LastImg2 from '../images/last-home2.png'
@@ -31,16 +34,19 @@ const Home = () => {
           <img src={valeurImg} alt='' />
         </div>
         <div className='valeur-details'>
-          <h3>Goûtez à la saveur du terroir
-            <span>chez mame dousso</span> </h3>
+          <h3>
+            Goûtez à la saveur du terroir
+            <span>chez mame dousso</span>{' '}
+          </h3>
           <p>
             C’est avec un immense plaisir que je vous invite à découvrir ma
             production de volailles et de foie gras. J’élève dans ma ferme,des
-            chèvres ,des moutons ,des canards,des poulets, et des pintades,des lapins issues
-            de la région. A travers ma gastronomie, je vous propose des produits
-            de qualité, d’une saveur exceptionnelle. Pour découvrir la diversité
-            de mes produits, n’hésitez pas à visiter mon exploitation. Je vous
-            garantis une expérience gustative enrichissante.
+            chèvres ,des moutons ,des canards,des poulets, et des pintades,des
+            lapins issues de la région. A travers ma gastronomie, je vous
+            propose des produits de qualité, d’une saveur exceptionnelle. Pour
+            découvrir la diversité de mes produits, n’hésitez pas à visiter mon
+            exploitation. Je vous garantis une expérience gustative
+            enrichissante.
           </p>
         </div>
       </section>
@@ -69,6 +75,20 @@ const Home = () => {
         </div>
       </section>
       <section className=' section-center nos-viande'>
+        <div className='first-video'>
+          <div className='banner-video'>
+            <Video
+              autoPlay
+              loop
+              muted
+              controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
+              poster=''
+              onCanPlayThrough={() => {}}
+            >
+              <source src={Video1} type='video/webm' />
+            </Video>
+          </div>
+        </div>
         <div className='container-nos-viande'>
           <article className='viande-1 v-1'>
             <img src={vImg1} alt='' />

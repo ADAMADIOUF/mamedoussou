@@ -19,7 +19,7 @@ const Contact = () => {
             <AiOutlineMail />
           </span>
           <h3>nous ecrire:</h3>
-          <h5>mamebiramediouf17@gmail.com</h5>
+          <h5>mambiram706@gmail@gmail.com</h5>
         </div>
         <div className='contact-contact-links'>
           <img src={Cimg3} alt='' />

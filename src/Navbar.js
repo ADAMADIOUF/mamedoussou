@@ -6,6 +6,9 @@ import Animates from './Animates';
 import  {links} from "./dataNav";
 
 const Navbar = () => {
+  
+  
+
  const [showNav,setShowNav]= useState(false);
  const navContainerRef = useRef(null) ;
  const navRef = useRef(null);
@@ -22,7 +25,7 @@ const Navbar = () => {
  },[showNav])
   return (
     <>
-      <nav>
+      <nav className="navbar">
         <div className='nav-center'>
           <div className='nav-header'>
             <img src={Logo} className='logo' alt='' />

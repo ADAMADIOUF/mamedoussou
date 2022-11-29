@@ -18,7 +18,7 @@ const Footer = () => {
                 </h5>
                 <h5>
                   {' '}
-                  <span>mamebirame@gmail.com</span>
+                  <span>mambiram706@gmail.com</span>
                 </h5>
               </div>
             </article>

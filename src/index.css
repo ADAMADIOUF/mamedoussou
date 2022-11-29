@@ -120,11 +120,15 @@ p {
   }
 }
 /* navbar */
-nav{
+.navbar{
   
   background: var(--clr-black);
   box-shadow: var(--light-shadow);
 }
+
+
+
+
 .nav-header{
   display: flex;
   align-items: center;
@@ -246,6 +250,14 @@ background: var(--clr-black);
     margin: 0 auto;
   }
 }
+/* video */
+.banner-video video{
+    width: 100%;
+  height: 100%;
+object-fit: contain;
+border-radius: var(--radius);
+}
+
 /* gategoryHome */
 .gategory-home{
   position: relative;
